@@ -31,11 +31,13 @@ class HomeController extends Controller
         return view('pages.index');
     }
 
-
-
     function contact () {
         return view('pages.contact');
 
+    }
+
+    function about() {
+        return view('pages.about');
     }
 
     function store(Request $request){

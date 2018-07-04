@@ -18,6 +18,8 @@ Route::get('/contact', 'HomeController@contact')->name('contact');
 Route::post('/contact', 'HomeController@store')->name('contact.store');
 Route::get('/thanks/{name}', 'HomeController@thanks')->name('thanks');
 
+Route::get('/about', 'HomeController@about')->name('about');
+
 /*Route::get('/', function () {
     return view('welcome');
 }); */
