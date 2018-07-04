@@ -11,10 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'HomeController@home')->name('index');
+
+
+Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::post('/contact', 'HomeController@store')->name('contact.store');
+Route::get('/thanks/{name}', 'HomeController@thanks')->name('thanks');
+
+/*Route::get('/', function () {
     return view('welcome');
-});
+}); */
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+
+
