@@ -11,9 +11,9 @@ class CarsTableSeeder extends Seeder
      */
     public function run()
     {
-     //   factory(App\Car::class, 50)->create()->each(function ($car) {
+        factory(App\Car::class, 50)->create()->each(function ($car) {
             //   $u->posts()->save(factory(App\Post::class)->make());
-     //'model'             => $v['model'],
-        //        'year'              => $faker->biasedNumberBetween(1998,2017, 'sqrt'),   });
+        });
     }
+
 }
