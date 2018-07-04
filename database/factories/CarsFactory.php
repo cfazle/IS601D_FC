@@ -8,6 +8,6 @@ $factory->define(App\Car::class, function (Faker $faker) {
     return [
         'Make' => $faker->randomElement($array = array ('ford','honda','toyota')),
         'Model' => $v['model'],
-        'Year'  => $faker->biasedNumberBetween(1998,2017, 'sqrt'),
+        'Year'  => $faker->biasedNumberBetween(1998,2018, 'sqrt'),
     ];
 });
