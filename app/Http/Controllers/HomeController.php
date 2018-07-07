@@ -31,14 +31,16 @@ class HomeController extends Controller
         return view('pages.index');
     }
 
+    function about() {
+        return view('pages.about');
+    }
+
     function contact () {
         return view('pages.contact');
 
     }
 
-    function about() {
-        return view('pages.about');
-    }
+
 
     function store(Request $request){
 
@@ -49,6 +51,11 @@ class HomeController extends Controller
     function thanks($name, Request $request){
 
         return view('pages.thankyou')->with(compact('name'));
+    }
+
+    public function index()
+    {
+        return view('home');
     }
 
 
