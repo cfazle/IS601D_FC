@@ -7,7 +7,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 Use App\Car;
 
-class Update_carYear_Test extends TestCase
+class Update_Car_Year_Test extends TestCase
 
 {
     //use RefreshDatabase;
